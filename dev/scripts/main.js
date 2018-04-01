@@ -192,7 +192,7 @@ app.showSaved = () => {
 		$('.savedRecipes ul').empty();
 		for (item in recipeList){
 			let recipeName = recipeList[item];
-			console.log(recipeName.images[0]);
+			// console.log(recipeName.images[0]);
 			$('.savedRecipes ul').append(`<li><a class="savedRecipeLink" href="${recipeName.source.sourceRecipeUrl}"><div class=savedRecipeItem><p>${recipeName.name}</p><img class="savedRecipeImage" src=${(recipeName.images[0]).hostedLargeUrl}></div></a></li>`);
 		}
 	});
